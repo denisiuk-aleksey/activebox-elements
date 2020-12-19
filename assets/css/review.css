@@ -1,2 +1,40 @@
 @import "/assets/css/reset.css";
 @import "/assets/css/grid.css";
+
+.reviews{
+  background-color: #34547A;
+  padding: 50px 0;
+  color: white;
+}
+.flex-sett{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.review-text{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wrapper{
+  margin-right: 10px;
+}
+
+@media screen and (max-width:992px){
+:root{
+  --global-margin: 15px;
+}
+
+  .wrapper{
+    margin-top: var(--global-margin);
+  }
+
+  .rewiew-content{
+      margin-top: var(--global-margin);
+  }
+}
